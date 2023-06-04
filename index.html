@@ -1,25 +1,139 @@
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <link rel="shortcut icon" type="image/x-icon" href="logos/af-stats.png" />
-        <title>AF-stats</title>
-    </head>
-    <body>
-        <h1>Welcome to AF-stats!</h1>
-
-        <h2>Stuttgart Silver Arrows</h2>
-        <a href="ssa">
-            <img src="logos/SSA_Logo.png" alt="Stuttgart Silver Arrows" width="200">
-        </a>
-
-        <h2>Albershausen Crusaders</h2>
-        <a href="ac">
-            <img src="logos/AC_Logo.png" alt="Albershausen Crusaders" width="200">
-        </a>
-    
-        </ul>
-        <p>Last updated: 2023-05-28 22:19:28</p>
-    </body>
-    </html>
-    
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                <title>Single Game Stats - Rushing - Nils-Börge Margotti</title>
+        
+                <!--Adding datatable style cdn-->
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"></a>
+                <!--Moving search filter to the left-->
+                <style>
+                    .dataTables_wrapper .dataTables_filter {
+                      position: relative;
+                      top: 0%;
+                      left: -87%;
+                    }
+                </style>
+                <!--Adding jQuery cdn-->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <!--Adding datatable cdn-->
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+                <!--Initializing datatable-->
+                <script>
+                $(document).ready(function() {
+                    $('#rushing').DataTable({
+                        paging:         false,
+                        autoWidth:      true,
+                        columnDefs: [
+                            { width: 75, targets: 0 },
+                            { width: 100, targets: 1 },
+                            { width: 100, targets: 2 }
+                        ],
+                        fixedColumns:   {
+                            left: 3
+                        },
+                        footerCallback: function ( row, data, start, end, display) {
+                            var api = this.api();
+                            nb_cols = api.columns().nodes().length;
+                            var rushAtt = api
+                                .column( 3, { page: 'current'} )
+                                .data().
+                                reduce( function (a, b) {
+                                    return (Number(a) + Number(b));
+                                }, 0);
+                            var rushYds = api
+                                .column( 4, { page: 'current'} )
+                                .data().
+                                reduce( function (a, b) {
+                                    return Number(a) + Number(b);
+                                }, 0);
+                            var j = 3;                       
+                            while(j<nb_cols){
+                                var pageTotal = 0                           
+                                if ( j == 5){
+                                    pageTotal = api
+                                        .column( j, { page: 'current'} )
+                                        .data()
+                                        .sort()
+                                        .reverse()[0];
+                                    if (!pageTotal){                             
+                                        pageTotal = 0;
+                                    }
+                                } else if ( j == 7 ){
+                                    if (rushAtt > 0){
+                                        pageTotal = (rushYds/rushAtt).toFixed(1)
+                                    }
+                                } else {
+                                    pageTotal = api
+                                        .column( j, { page: 'current'} )
+                                        .data().
+                                        reduce( function (a, b) {
+                                            return Number(a) + Number(b);
+                                        }, 0);
+                                }
+                                $( api.column( j ).footer() ).html(pageTotal);
+                                j++;
+                            }
+                        }
+                    });
+                });
+                </script>
+        
+                <link rel="stylesheet" type="text/css" href="styles.css">
+            </head>
+            <body>
+                <h1>Single Game Stats - Rushing</h1>
+                <h2>Silver Arrows</h2>
+                <h2>Nils-Börge Margotti - OL - #74</h2>
+                <table class="menu" id="menu">
+                    <tbody>
+                        <tr>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/ssa.html">Home</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/247.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/247.html"><strong>Rushing</strong></a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/247.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/247.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/247.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/247.html">Return</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <table class="stats-table" id="rushing">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Home</th>
+                            <th>Away</th>
+                            <th>Att</th>
+                            <th>Yds</th>
+                            <th>Long</th>
+                            <th>TD</th>
+                            <th>YPR</th>
+                            <th>Fmb</th>
+                            <th>Lost</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Totals</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                       </tr>       
+                       </tfoot>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+            </body>
+        </html>
+        

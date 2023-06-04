@@ -1,28 +1,2443 @@
 
     <!DOCTYPE html>
     <html>
-    <head>
-        <link rel="shortcut icon" type="image/x-icon" href="logos/af-stats.png" />
-        <title>AF-stats - Stuttgart Silver Arrows</title>
-    </head>
-    <body>
-        <h1>Stuttgart Silver Arrows</h1>
-        <img src="logos/SSA_Logo.png" alt="Stuttgart Silver Arrows" width="200"><br>
-        <h2>List of PDF Files</h2>
-        <ul>
-    <li><a href='SSA/Silver Arrows Career Stats.pdf'>Silver Arrows Career Stats.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2015.pdf'>Silver Arrows Season Stats 2015.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2016.pdf'>Silver Arrows Season Stats 2016.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2017.pdf'>Silver Arrows Season Stats 2017.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2018.pdf'>Silver Arrows Season Stats 2018.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2019.pdf'>Silver Arrows Season Stats 2019.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2020.pdf'>Silver Arrows Season Stats 2020.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2021.pdf'>Silver Arrows Season Stats 2021.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2022.pdf'>Silver Arrows Season Stats 2022.pdf</a></li>
-<li><a href='SSA/Silver Arrows Season Stats 2023.pdf'>Silver Arrows Season Stats 2023.pdf</a></li>
-
-        </ul>
-        <p>Last updated: 2023-05-28 22:19:28</p>
-    </body>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <title>AF-stats</title>
+                <!--Adding datatable style cdn-->
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"></a>
+                <style>
+                    .dataTables_wrapper .dataTables_filter {
+                      position: relative;
+                      top: 0%;
+                      left: -74%;
+                    }
+                </style>
+                <!--Adding jQuery cdn-->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <!--Adding datatable cdn-->
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+                <!--Initializing datatable-->
+                <script>
+                $(document).ready(function() {               
+                    var table = $('#index').removeAttr('width').DataTable( {
+                        paging:         false,
+                        columnDefs: [
+                            { width: 100, targets: 0 },
+                            { width: 100, targets: 1 },
+                            { width:  50, targets: 2 },
+                            { width:  50, targets: 3 },
+                            { width:  50, targets: 4 },
+                            { width:  50, targets: 5 },
+                            { width:  50, targets: 6 },
+                            { width:  50, targets: 7 },
+                            { width:  50, targets: 8 }
+                        ],
+                        fixedColumns: true
+                    });
+                } );
+                </script>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+        <body>
+            <h1>American Football Stats</h1>
+            <h2>Stuttgart Silver Arrows</h2>
+            <div style="width: 50%;">
+                <table class="stats-table" id="index">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                
+                        <tr>
+                            <td>Alexander</td>
+                            <td>Abramow</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/001.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/001.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/001.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/001.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/001.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/001.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Kutlay</td>
+                            <td>Acar</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/002.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/002.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/002.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/002.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/002.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/002.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Toni</td>
+                            <td>Albert</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/003.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/003.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/003.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/003.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/003.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/003.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ralf</td>
+                            <td>Albrecht</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/004.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/004.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/004.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/004.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/004.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/004.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dominik</td>
+                            <td>Alexidis</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/005.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/005.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/005.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/005.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/005.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/005.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Andreas</td>
+                            <td>Schübel</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/006.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/006.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/006.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/006.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/006.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/006.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Martin</td>
+                            <td>Aymar</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/007.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/007.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/007.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/007.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/007.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/007.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Philipp</td>
+                            <td>Bader</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/008.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/008.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/008.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/008.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/008.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/008.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marcel</td>
+                            <td>Bährens</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/009.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/009.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/009.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/009.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/009.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/009.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tobias</td>
+                            <td>Baisch</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/010.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/010.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/010.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/010.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/010.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/010.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Leon</td>
+                            <td>Bansbach</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/011.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/011.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/011.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/011.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/011.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/011.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sebastian</td>
+                            <td>Beck</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/012.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/012.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/012.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/012.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/012.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/012.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Christian</td>
+                            <td>Berger</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/013.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/013.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/013.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/013.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/013.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/013.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Bickele</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/014.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/014.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/014.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/014.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/014.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/014.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marcel</td>
+                            <td>Bischof</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/015.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/015.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/015.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/015.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/015.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/015.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Toni</td>
+                            <td>Blankenburg</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/016.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/016.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/016.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/016.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/016.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/016.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Fabian</td>
+                            <td>Blessing</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/017.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/017.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/017.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/017.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/017.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/017.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tobias</td>
+                            <td>Böhm</td>
+                            <td>S</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/018.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/018.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/018.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/018.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/018.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/018.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Patrick</td>
+                            <td>Brand</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/019.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/019.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/019.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/019.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/019.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/019.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Manuel</td>
+                            <td>Brommer</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/020.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/020.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/020.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/020.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/020.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/020.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nelson</td>
+                            <td>Bullard</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/021.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/021.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/021.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/021.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/021.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/021.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Atdhe</td>
+                            <td>Bulliqi</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/022.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/022.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/022.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/022.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/022.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/022.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nils</td>
+                            <td>Büteröwe</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/023.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/023.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/023.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/023.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/023.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/023.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Michael</td>
+                            <td>Canadi</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/024.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/024.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/024.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/024.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/024.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/024.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Joseph</td>
+                            <td>Casiano</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/025.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/025.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/025.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/025.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/025.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/025.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Fiete</td>
+                            <td>Centgraf</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/026.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/026.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/026.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/026.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/026.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/026.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tifenn</td>
+                            <td>Champion</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/027.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/027.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/027.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/027.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/027.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/027.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Christos</td>
+                            <td>Chatzikostas</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/028.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/028.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/028.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/028.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/028.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/028.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Enrico</td>
+                            <td>Chiaramonte</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/029.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/029.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/029.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/029.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/029.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/029.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Reinis</td>
+                            <td>Cimurs</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/030.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/030.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/030.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/030.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/030.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/030.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Daniel</td>
+                            <td>Contreras</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/031.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/031.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/031.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/031.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/031.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/031.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jesse</td>
+                            <td>Cudjoe</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/032.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/032.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/032.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/032.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/032.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/032.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Lukas</td>
+                            <td>Dank</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/033.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/033.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/033.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/033.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/033.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/033.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dennis</td>
+                            <td>Dantonello</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/034.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/034.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/034.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/034.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/034.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/034.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nick</td>
+                            <td>Daubitzer</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/035.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/035.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/035.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/035.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/035.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/035.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Fabian</td>
+                            <td>De Paula</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/036.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/036.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/036.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/036.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/036.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/036.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sergio</td>
+                            <td>De Pilla</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/037.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/037.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/037.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/037.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/037.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/037.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Gerrit</td>
+                            <td>De Vries</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/038.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/038.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/038.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/038.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/038.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/038.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Michael</td>
+                            <td>Dierberger</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/039.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/039.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/039.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/039.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/039.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/039.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Miguel</td>
+                            <td>Dittus</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/040.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/040.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/040.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/040.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/040.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/040.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Rafael</td>
+                            <td>Dobler</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/041.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/041.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/041.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/041.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/041.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/041.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Leon</td>
+                            <td>Du Maire</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/042.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/042.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/042.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/042.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/042.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/042.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Daniel</td>
+                            <td>Eberhard</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/043.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/043.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/043.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/043.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/043.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/043.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dennis</td>
+                            <td>Eiselt</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/044.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/044.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/044.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/044.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/044.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/044.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mika</td>
+                            <td>Endl</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/045.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/045.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/045.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/045.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/045.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/045.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Barbaros</td>
+                            <td>Ergen</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/046.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/046.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/046.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/046.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/046.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/046.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marcus</td>
+                            <td>Euchner</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/047.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/047.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/047.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/047.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/047.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/047.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Lucca</td>
+                            <td>Faas</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/048.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/048.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/048.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/048.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/048.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/048.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Linus</td>
+                            <td>Fackler</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/049.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/049.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/049.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/049.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/049.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/049.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Olli</td>
+                            <td>Feige</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/050.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/050.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/050.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/050.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/050.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/050.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Bastian</td>
+                            <td>Feigl</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/051.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/051.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/051.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/051.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/051.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/051.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jonas</td>
+                            <td>Felten</td>
+                            <td>S</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/052.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/052.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/052.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/052.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/052.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/052.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Phillip</td>
+                            <td>Feth</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/053.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/053.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/053.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/053.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/053.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/053.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mark</td>
+                            <td>Fink</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/054.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/054.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/054.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/054.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/054.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/054.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Johannes</td>
+                            <td>Fischer</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/055.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/055.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/055.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/055.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/055.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/055.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Thomas</td>
+                            <td>Frank</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/056.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/056.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/056.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/056.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/056.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/056.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Lucas</td>
+                            <td>Frech</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/057.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/057.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/057.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/057.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/057.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/057.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Chris</td>
+                            <td>Gebert</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/058.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/058.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/058.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/058.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/058.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/058.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nicolas</td>
+                            <td>Geiger</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/059.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/059.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/059.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/059.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/059.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/059.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Patrick</td>
+                            <td>Grassegger</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/060.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/060.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/060.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/060.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/060.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/060.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Maximilian</td>
+                            <td>Grüschow</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/061.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/061.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/061.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/061.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/061.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/061.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Felix</td>
+                            <td>Guzek</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/062.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/062.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/062.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/062.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/062.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/062.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Anton</td>
+                            <td>Haffner</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/063.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/063.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/063.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/063.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/063.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/063.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jan</td>
+                            <td>Halbmann</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/064.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/064.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/064.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/064.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/064.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/064.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Finn</td>
+                            <td>Hansen</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/065.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/065.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/065.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/065.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/065.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/065.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Maximilian</td>
+                            <td>Hansen</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/066.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/066.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/066.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/066.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/066.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/066.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Patrick</td>
+                            <td>Hefter</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/067.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/067.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/067.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/067.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/067.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/067.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Luke</td>
+                            <td>Held</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/068.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/068.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/068.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/068.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/068.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/068.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Hellwig</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/069.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/069.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/069.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/069.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/069.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/069.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Raphael</td>
+                            <td>Henßler</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/070.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/070.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/070.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/070.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/070.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/070.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nico</td>
+                            <td>Hermes</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/071.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/071.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/071.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/071.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/071.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/071.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Julian</td>
+                            <td>Hettich</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/072.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/072.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/072.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/072.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/072.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/072.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mark</td>
+                            <td>Hipp</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/073.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/073.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/073.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/073.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/073.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/073.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tobias</td>
+                            <td>Hoffmann</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/074.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/074.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/074.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/074.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/074.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/074.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ansgar</td>
+                            <td>Holthaus</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/075.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/075.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/075.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/075.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/075.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/075.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sandro</td>
+                            <td>Höpfer</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/076.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/076.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/076.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/076.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/076.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/076.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Max</td>
+                            <td>Huber</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/077.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/077.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/077.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/077.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/077.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/077.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Maximilian</td>
+                            <td>Hüther</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/078.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/078.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/078.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/078.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/078.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/078.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Philipp</td>
+                            <td>Jacqué</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/079.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/079.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/079.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/079.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/079.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/079.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Patrick</td>
+                            <td>Janitschke</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/080.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/080.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/080.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/080.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/080.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/080.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jan</td>
+                            <td>John</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/081.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/081.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/081.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/081.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/081.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/081.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Cornelius</td>
+                            <td>Jones</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/082.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/082.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/082.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/082.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/082.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/082.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sunny</td>
+                            <td>Junge</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/083.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/083.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/083.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/083.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/083.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/083.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Christian</td>
+                            <td>Kalmbach</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/084.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/084.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/084.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/084.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/084.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/084.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mike</td>
+                            <td>Kariegus</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/085.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/085.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/085.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/085.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/085.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/085.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tobias</td>
+                            <td>Karl</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/086.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/086.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/086.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/086.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/086.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/086.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Alex</td>
+                            <td>Katz</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/087.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/087.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/087.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/087.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/087.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/087.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Aris</td>
+                            <td>Katz</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/088.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/088.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/088.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/088.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/088.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/088.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Kayser</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/089.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/089.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/089.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/089.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/089.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/089.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Turan</td>
+                            <td>Kirlin</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/090.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/090.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/090.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/090.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/090.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/090.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mika</td>
+                            <td>Knebl</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/091.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/091.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/091.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/091.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/091.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/091.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Joscha</td>
+                            <td>Koch</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/092.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/092.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/092.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/092.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/092.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/092.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Cederic</td>
+                            <td>König</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/093.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/093.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/093.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/093.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/093.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/093.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Rudolf</td>
+                            <td>Köppling</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/094.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/094.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/094.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/094.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/094.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/094.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dominik</td>
+                            <td>Kröhl</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/095.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/095.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/095.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/095.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/095.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/095.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dennis</td>
+                            <td>Krug</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/096.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/096.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/096.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/096.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/096.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/096.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Thomas</td>
+                            <td>Kübel-Sorger</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/097.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/097.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/097.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/097.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/097.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/097.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nico</td>
+                            <td>Lang</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/098.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/098.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/098.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/098.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/098.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/098.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marcel</td>
+                            <td>Latkowski</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/099.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/099.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/099.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/099.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/099.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/099.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tibor</td>
+                            <td>Laubert</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/100.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/100.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/100.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/100.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/100.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/100.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Florian</td>
+                            <td>Laufer</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/101.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/101.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/101.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/101.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/101.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/101.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Moritz</td>
+                            <td>Lauster</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/102.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/102.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/102.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/102.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/102.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/102.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Finn</td>
+                            <td>Laws</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/103.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/103.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/103.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/103.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/103.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/103.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Manuel</td>
+                            <td>Lehniger</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/104.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/104.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/104.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/104.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/104.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/104.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Manuel</td>
+                            <td>Leutner</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/105.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/105.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/105.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/105.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/105.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/105.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Benedikt</td>
+                            <td>Lutz</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/106.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/106.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/106.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/106.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/106.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/106.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tobias</td>
+                            <td>Mahler</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/107.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/107.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/107.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/107.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/107.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/107.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Julian</td>
+                            <td>Mandic</td>
+                            <td>S</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/108.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/108.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/108.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/108.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/108.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/108.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>John David</td>
+                            <td>Marfo</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/109.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/109.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/109.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/109.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/109.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/109.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marian</td>
+                            <td>Marx</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/110.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/110.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/110.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/110.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/110.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/110.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dennis</td>
+                            <td>Matzig</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/111.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/111.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/111.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/111.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/111.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/111.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mike</td>
+                            <td>McCullum</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/112.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/112.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/112.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/112.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/112.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/112.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Menzel</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/113.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/113.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/113.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/113.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/113.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/113.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dominic</td>
+                            <td>Micha</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/114.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/114.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/114.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/114.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/114.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/114.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Samuel</td>
+                            <td>Mike</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/115.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/115.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/115.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/115.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/115.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/115.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Felix</td>
+                            <td>Möhrle</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/116.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/116.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/116.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/116.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/116.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/116.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Derek</td>
+                            <td>Morasch</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/117.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/117.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/117.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/117.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/117.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/117.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Stefan</td>
+                            <td>Muffler</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/118.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/118.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/118.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/118.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/118.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/118.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Patrick</td>
+                            <td>Negron</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/119.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/119.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/119.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/119.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/119.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/119.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dennis</td>
+                            <td>Neumann</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/120.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/120.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/120.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/120.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/120.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/120.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Arne</td>
+                            <td>Nissen</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/121.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/121.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/121.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/121.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/121.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/121.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Yannick</td>
+                            <td>Nötzold</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/122.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/122.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/122.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/122.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/122.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/122.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Malcolm</td>
+                            <td>Okyere</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/123.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/123.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/123.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/123.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/123.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/123.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Matteo</td>
+                            <td>Palmieri</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/124.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/124.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/124.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/124.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/124.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/124.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marc</td>
+                            <td>Pflüger</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/125.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/125.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/125.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/125.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/125.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/125.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nico</td>
+                            <td>Plapp</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/126.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/126.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/126.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/126.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/126.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/126.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Manuel</td>
+                            <td>Porfetye</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/127.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/127.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/127.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/127.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/127.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/127.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Radke</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/128.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/128.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/128.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/128.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/128.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/128.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nico</td>
+                            <td>Ranellucci</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/129.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/129.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/129.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/129.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/129.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/129.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marc</td>
+                            <td>Rapp</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/130.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/130.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/130.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/130.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/130.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/130.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marcel</td>
+                            <td>Rappl</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/131.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/131.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/131.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/131.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/131.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/131.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Martin</td>
+                            <td>Ratajczak</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/132.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/132.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/132.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/132.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/132.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/132.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Christian</td>
+                            <td>Reith</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/133.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/133.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/133.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/133.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/133.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/133.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Niccolo</td>
+                            <td>Riedel</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/134.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/134.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/134.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/134.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/134.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/134.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Daniel</td>
+                            <td>Rietzel</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/135.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/135.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/135.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/135.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/135.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/135.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Daniel</td>
+                            <td>Riexinger</td>
+                            <td>CB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/136.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/136.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/136.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/136.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/136.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/136.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mike</td>
+                            <td>Ritter</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/137.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/137.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/137.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/137.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/137.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/137.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nicholas</td>
+                            <td>Rodriguez</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/138.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/138.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/138.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/138.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/138.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/138.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Timo</td>
+                            <td>Röring</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/139.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/139.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/139.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/139.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/139.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/139.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Julian</td>
+                            <td>Roth</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/140.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/140.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/140.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/140.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/140.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/140.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ivo</td>
+                            <td>Rothenberger</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/141.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/141.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/141.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/141.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/141.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/141.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Florian</td>
+                            <td>Saenger</td>
+                            <td>TE</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/142.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/142.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/142.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/142.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/142.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/142.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nico</td>
+                            <td>Santoianni</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/143.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/143.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/143.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/143.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/143.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/143.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Janik</td>
+                            <td>Sarbandi</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/144.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/144.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/144.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/144.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/144.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/144.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Aaron</td>
+                            <td>Schell</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/145.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/145.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/145.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/145.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/145.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/145.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marcel</td>
+                            <td>Schembera</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/146.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/146.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/146.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/146.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/146.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/146.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marc</td>
+                            <td>Schmauder</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/147.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/147.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/147.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/147.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/147.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/147.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Thomas</td>
+                            <td>Schmidt</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/148.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/148.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/148.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/148.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/148.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/148.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Raphael</td>
+                            <td>Schnizler</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/149.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/149.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/149.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/149.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/149.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/149.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Reinke</td>
+                            <td>Schöpperle</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/150.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/150.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/150.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/150.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/150.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/150.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Andreas</td>
+                            <td>Schorich</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/151.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/151.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/151.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/151.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/151.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/151.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Andreas</td>
+                            <td>Schübl</td>
+                            <td>S</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/152.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/152.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/152.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/152.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/152.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/152.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Fabian</td>
+                            <td>Schulz</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/153.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/153.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/153.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/153.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/153.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/153.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Thorsten</td>
+                            <td>Senger</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/154.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/154.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/154.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/154.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/154.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/154.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Misha</td>
+                            <td>Shafaei</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/155.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/155.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/155.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/155.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/155.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/155.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Anthony</td>
+                            <td>Shelton</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/156.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/156.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/156.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/156.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/156.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/156.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Thomas</td>
+                            <td>Sieber</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/157.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/157.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/157.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/157.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/157.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/157.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Stanislav</td>
+                            <td>Sokol</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/158.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/158.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/158.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/158.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/158.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/158.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nicolas</td>
+                            <td>Stanger</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/159.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/159.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/159.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/159.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/159.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/159.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sebastian</td>
+                            <td>Staritz</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/160.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/160.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/160.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/160.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/160.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/160.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Steen</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/161.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/161.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/161.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/161.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/161.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/161.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Paul</td>
+                            <td>Steigerwald</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/162.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/162.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/162.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/162.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/162.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/162.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tim</td>
+                            <td>Steiner</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/163.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/163.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/163.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/163.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/163.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/163.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Patrick</td>
+                            <td>Straußenacker</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/164.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/164.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/164.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/164.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/164.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/164.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jannick</td>
+                            <td>Sutter</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/165.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/165.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/165.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/165.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/165.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/165.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Michael</td>
+                            <td>Tatus</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/166.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/166.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/166.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/166.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/166.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/166.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dimitrios</td>
+                            <td>Tiagoudis</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/167.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/167.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/167.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/167.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/167.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/167.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Chris</td>
+                            <td>Töller</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/168.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/168.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/168.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/168.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/168.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/168.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jorge</td>
+                            <td>Torrero</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/169.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/169.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/169.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/169.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/169.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/169.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jens</td>
+                            <td>Trautwein</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/170.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/170.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/170.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/170.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/170.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/170.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Luis</td>
+                            <td>Turian</td>
+                            <td>S</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/171.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/171.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/171.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/171.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/171.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/171.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Paul</td>
+                            <td>Turk</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/172.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/172.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/172.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/172.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/172.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/172.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>David</td>
+                            <td>Varga</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/173.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/173.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/173.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/173.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/173.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/173.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dardan</td>
+                            <td>Vuci</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/174.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/174.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/174.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/174.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/174.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/174.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Florian</td>
+                            <td>Wall</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/175.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/175.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/175.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/175.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/175.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/175.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Andreas</td>
+                            <td>Wark</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/176.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/176.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/176.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/176.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/176.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/176.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Steve</td>
+                            <td>Watchueng</td>
+                            <td>RB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/177.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/177.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/177.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/177.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/177.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/177.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marc</td>
+                            <td>Weinberger</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/178.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/178.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/178.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/178.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/178.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/178.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Florian</td>
+                            <td>Wenzl</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/179.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/179.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/179.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/179.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/179.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/179.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dominique</td>
+                            <td>Wieczorek</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/180.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/180.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/180.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/180.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/180.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/180.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jan</td>
+                            <td>Wittnebel</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/181.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/181.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/181.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/181.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/181.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/181.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Frank</td>
+                            <td>Wolff</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/182.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/182.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/182.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/182.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/182.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/182.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Maximilian</td>
+                            <td>Wulle</td>
+                            <td>LB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/183.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/183.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/183.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/183.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/183.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/183.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Tobias</td>
+                            <td>Wunder</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/184.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/184.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/184.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/184.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/184.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/184.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Pascal</td>
+                            <td>Elting</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/185.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/185.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/185.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/185.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/185.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/185.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Paul</td>
+                            <td>Romann</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/186.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/186.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/186.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/186.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/186.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/186.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ruben</td>
+                            <td>Hamm</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/187.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/187.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/187.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/187.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/187.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/187.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nils</td>
+                            <td>Richter</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/188.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/188.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/188.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/188.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/188.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/188.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Leopold</td>
+                            <td>Stengle</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/189.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/189.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/189.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/189.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/189.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/189.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marvin</td>
+                            <td>Kauffmann</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/190.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/190.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/190.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/190.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/190.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/190.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Philipp</td>
+                            <td>Vollmer</td>
+                            <td>DL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/191.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/191.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/191.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/191.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/191.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/191.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marvin</td>
+                            <td>Kauffmann</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/240.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/240.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/240.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/240.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/240.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/240.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ruben</td>
+                            <td>Hamm</td>
+                            <td>DB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/241.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/241.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/241.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/241.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/241.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/241.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Team</td>
+                            <td>Team</td>
+                            <td>nan</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/242.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/242.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/242.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/242.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/242.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/242.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Krinn</td>
+                            <td>QB</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/244.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/244.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/244.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/244.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/244.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/244.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ricardo</td>
+                            <td>Castro</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/245.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/245.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/245.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/245.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/245.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/245.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ardit</td>
+                            <td>Kroni</td>
+                            <td>WR</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/246.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/246.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/246.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/246.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/246.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/246.html">Return</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Nils-Börge</td>
+                            <td>Margotti</td>
+                            <td>OL</td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/passing/247.html">Passing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/rushing/247.html">Rushing</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/receiving/247.html">Receiving</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/defense/247.html">Defense</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/kicking/247.html">Kicking</a></td>
+                            <td><a href="C:\Users\Flaque\PycharmProjects\AFStats\website/return/247.html">Return</a></td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </body>
     </html>
     
